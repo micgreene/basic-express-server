@@ -1,10 +1,11 @@
 # Lab 2 - Basic Express Server
 
-Deployment Test
+## Deployment Test
 
 Author: Michael Greene
 
 *tests report link*
+
 [Front End (name set as 'frank')](https://basic-exp-server.herokuapp.com/person?name=frank)
 
 ### Setup
