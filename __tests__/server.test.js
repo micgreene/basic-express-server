@@ -9,7 +9,7 @@ describe('**** API SERVER ****', () => {
 
   // it -> your actual assertions
   it('should respond with a 500 on a server error', () => {
-    mockRequest.get('/bad-route')
+    mockRequest.get('/persons?name:blegh')
     .then(results => {
       expect(results.status).toBe(500);
     })
@@ -20,12 +20,5 @@ describe('**** API SERVER ****', () => {
     .then(results => {
       expect(results.status).toBe(404);
     })
-  });
-
-  it('should respond with square of 10 being 100', async () => {
-    await mockRequest.get('/squared')
-      .then(results => {
-        expect(results.status).toBe(200);
-      })
   });
 })
