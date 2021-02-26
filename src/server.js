@@ -20,7 +20,7 @@ app.use(validate);
 
 app.get('/person', logger, validate, (req,res) => {
   let name = req.query.name;
-  res.status(200).json({ 'name enter': name});
+  res.status(200).json({ 'Name Entered': name});
 })
 
 //Any routes not listed above are not recognized and send the 494 status via the 404.js file.
